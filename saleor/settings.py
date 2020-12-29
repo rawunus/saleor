@@ -69,7 +69,7 @@ DATABASES = {
 
 
 TIME_ZONE = "UTC"
-LANGUAGE_CODE = "it"
+LANGUAGE_CODE = "en"
 LANGUAGES = [
     ("ar", "Arabic"),
     ("az", "Azerbaijani"),
