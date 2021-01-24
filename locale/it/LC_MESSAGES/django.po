@@ -463,14 +463,14 @@ msgstr ""
 #: templates/templated_email/source/shared/footer.mjml:4
 msgctxt "Base email text"
 msgid "This is an automatically generated e-mail, please do not reply."
-msgstr "Questa email è generata automaticamente, per favore non rispondere."
+msgstr "Questa email è generata automaticamente."
 
 #: templates/templated_email/shared/_footer.email:5
 #: templates/templated_email/source/shared/footer.mjml:13
 #, python-format
 msgctxt "Base email footer"
 msgid "Sincerely, %(site_name)s"
-msgstr "Cordialmente, %(site_name)s"
+msgstr "%(site_name)s"
 
 #: templates/templated_email/shared/_header.email:2
 #: templates/templated_email/source/account_delete.mjml:13
@@ -694,7 +694,7 @@ msgid ""
 "password."
 msgstr ""
 "Stai ricevendo questo messaggio per impostare la password al tuo account"
-"personale di accesso %(site_name)s.<br/> Clicca sul link in basso per reimpostare la tua " 
+" personale di accesso %(site_name)s.<br/> Clicca sul link in basso per reimpostare la tua " 
 "password."
 
 #: templates/templated_email/source/staff_confirm_order.mjml:17
