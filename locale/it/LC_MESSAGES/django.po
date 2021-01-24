@@ -239,7 +239,7 @@ msgstr ""
 #, python-format
 msgctxt "Set password for staff member e-mail title"
 msgid "Hello from %(site_name)s!"
-msgstr "Benvenuti in %(site_name)s"
+msgstr "Adesione %(site_name)s"
 
 #: templates/templated_email/dashboard/staff/set_password.email:6
 #, python-format
@@ -492,7 +492,7 @@ msgstr "%(site_name)s"
 #: templates/templated_email/source/update_fulfillment.mjml:13
 msgctxt "Standard e-mail greeting"
 msgid "Hi!"
-msgstr "Adesione STORITALIA,"
+msgstr "Bevenuto/a in STORITALIA,"
 
 #: templates/templated_email/source/account_delete.mjml:16
 #, python-format
