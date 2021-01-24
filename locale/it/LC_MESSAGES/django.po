@@ -239,7 +239,7 @@ msgstr ""
 #, python-format
 msgctxt "Set password for staff member e-mail title"
 msgid "Hello from %(site_name)s!"
-msgstr "Ciao da %(site_name)s!"
+msgstr "Benvenuto in STORITALIA %(site_name)s"
 
 #: templates/templated_email/dashboard/staff/set_password.email:6
 #, python-format
@@ -248,7 +248,10 @@ msgid ""
 "\n"
 "You're receiving this e-mail because you have to set a password for your staff member account at %(site_name)s.\n"
 "Click the link below to reset your password.\n"
-msgstr ""
+msgstr 
+"\n"
+"Stai ricevendo questo messaggio per impostare la password al tuo account personale di accesso %(site_name)s.\n" 
+"Clicca sul link in basso per reimpostare la password.\n"
 
 #: templates/templated_email/order/confirm_fulfillment.email:4
 #, python-format
@@ -489,7 +492,7 @@ msgstr "Cordialmente, %(site_name)s"
 #: templates/templated_email/source/update_fulfillment.mjml:13
 msgctxt "Standard e-mail greeting"
 msgid "Hi!"
-msgstr "Ciao!"
+msgstr "Benvenuto,"
 
 #: templates/templated_email/source/account_delete.mjml:16
 #, python-format
