@@ -248,7 +248,7 @@ msgid ""
 "\n"
 "You're receiving this e-mail because you have to set a password for your staff member account at %(site_name)s.\n"
 "Click the link below to reset your password.\n"
-msgstr 
+msgstr ""
 "\n"
 "Stai ricevendo questo messaggio per impostare la password al tuo account personale di accesso %(site_name)s.\n" 
 "Clicca sul link in basso per reimpostare la password.\n"
