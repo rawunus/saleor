@@ -1,2 +1,2 @@
 {% load i18n %}
-{% trans "Benvenuto," context "Standard e-mail greeting" %}
+{% trans "Benvenuti!" context "Standard e-mail greeting" %}

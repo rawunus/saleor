@@ -239,7 +239,7 @@ msgstr ""
 #, python-format
 msgctxt "Set password for staff member e-mail title"
 msgid "Hello from %(site_name)s!"
-msgstr "Benvenuto in STORITALIA %(site_name)s"
+msgstr "Benvenuti in %(site_name)s"
 
 #: templates/templated_email/dashboard/staff/set_password.email:6
 #, python-format
@@ -690,6 +690,9 @@ msgid ""
 " member account at %(site_name)s.<br/> Click the link below to set up your "
 "password."
 msgstr ""
+"Stai ricevendo questo messaggio per impostare la password al tuo account"
+"personale di accesso %(site_name)s.<br/> Clicca sul link in basso per reimpostare la tua " 
+"password."
 
 #: templates/templated_email/source/staff_confirm_order.mjml:17
 #, python-format
