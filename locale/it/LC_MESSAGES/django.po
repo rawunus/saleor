@@ -492,7 +492,7 @@ msgstr "%(site_name)s"
 #: templates/templated_email/source/update_fulfillment.mjml:13
 msgctxt "Standard e-mail greeting"
 msgid "Hi!"
-msgstr "Benvenuto,"
+msgstr "Benvenuti in STORITALIA,"
 
 #: templates/templated_email/source/account_delete.mjml:16
 #, python-format
