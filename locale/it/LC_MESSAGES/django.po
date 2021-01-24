@@ -681,6 +681,9 @@ msgid ""
 "customer account at %(site_name)s.<br/> Click the link below to set up your "
 "password."
 msgstr ""
+"Stai ricevendo questo messaggio per impostare la password al tuo account"
+"personale di accesso %(site_name)s.<br/> Clicca sul link in basso per reimpostare la tua " 
+"password."
 
 #: templates/templated_email/source/set_password.mjml:16
 #, python-format
