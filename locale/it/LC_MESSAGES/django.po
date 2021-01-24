@@ -689,7 +689,7 @@ msgstr ""
 #, python-format
 msgctxt "Set password for staff member e-mail text"
 msgid ""
-"You're receiving this e-mail because you have to set password for your staff hello world"
+"You're receiving this e-mail because you have to set password for your staff"
 " member account at %(site_name)s.<br/> Click the link below to set up your "
 "password."
 msgstr ""
