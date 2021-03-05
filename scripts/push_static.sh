@@ -9,6 +9,7 @@ docker run --rm \
     -e AWS_MEDIA_BUCKET_NAME=${AWS_MEDIA_BUCKET_NAME} \
     -e AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} \
     -e AWS_STORAGE_BUCKET_NAME=${AWS_STORAGE_BUCKET_NAME} \
+    -e AWS_S3_FILE_OVERWRITE=${AWS_S3_FILE_OVERWRITE} \
     -e STATIC_URL=${STATIC_URL} \
     ${IMAGE_NAME} \
     python3 manage.py collectstatic --no-input
