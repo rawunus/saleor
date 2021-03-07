@@ -1724,8 +1724,8 @@ class ProductImageCreate(BaseMutation):
         validate_image_file(image_data, "image")
 
         print("here the file is validated!")
-        print("name is: %s" % (file.name))
-        print("name is: %s" % (file.pk))
+        print("name is: %s" % (image_data.name))
+        print("name is: %s" % (image_data.pk))
 
         image = product.images.create(image=image_data, alt=data.get("alt", ""))
         create_product_thumbnails.delay(image.pk)
