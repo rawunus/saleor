@@ -371,7 +371,6 @@ def create_product_image(product, placeholder_dir, image_name):
     # We don't want to create duplicated product images
     if product.images.count() >= len(IMAGES_MAPPING.get(product.pk, [])):
         return None
-    print("image is: %s" % (image))
     product_image = ProductImage(product=product, image=image)
     product_image.save()
     create_product_thumbnails.delay(product_image.pk)

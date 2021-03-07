@@ -35,6 +35,8 @@ def str_to_enum(name):
 
 def validate_image_file(file, field_name):
     """Validate if the file is an image."""
+    print("here the file is validated!")
+    print("name is: %s" % (file.name))
     if not file:
         raise ValidationError(
             {field_name: ValidationError("File is required", code="required")}
