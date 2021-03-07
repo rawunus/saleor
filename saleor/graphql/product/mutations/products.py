@@ -61,7 +61,9 @@ from ..utils import (
     validate_attributes_input_for_variant,
 )
 from .common import ReorderInput
+from time import time
 
+milliseconds = int(time() * 1000) 
 
 class CategoryInput(graphene.InputObjectType):
     description = graphene.String(description="Category description (HTML/text).")
@@ -1725,6 +1727,8 @@ class ProductImageCreate(BaseMutation):
 
         print("here the file is validated!")
         print("name is: %s" % (image_data.name))
+        print("Time in milliseconds since epoch", milliseconds) 
+
         image_data.name = "2020-" + image_data.name
         print("name is: %s" % (image_data.name))
 
