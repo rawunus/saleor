@@ -1723,6 +1723,10 @@ class ProductImageCreate(BaseMutation):
         image_data = info.context.FILES.get(data["image"])
         validate_image_file(image_data, "image")
 
+        print("here the file is validated!")
+        print("name is: %s" % (file.name))
+        print("name is: %s" % (file.pk))
+
         image = product.images.create(image=image_data, alt=data.get("alt", ""))
         create_product_thumbnails.delay(image.pk)
         return ProductImageCreate(product=product, image=image)
