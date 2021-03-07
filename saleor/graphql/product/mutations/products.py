@@ -1729,8 +1729,7 @@ class ProductImageCreate(BaseMutation):
         print("name is: %s" % (image_data.name))
         print("Time in milliseconds since epoch", milliseconds) 
 
-        image_data.name = "2020-" + image_data.name
-        print("name is: %s" % (image_data.name))
+        image_data.name = str(milliseconds) + "_" + image_data.name
 
         image = product.images.create(image=image_data, alt=data.get("alt", ""))
         create_product_thumbnails.delay(image.pk)
