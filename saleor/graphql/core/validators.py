@@ -42,10 +42,8 @@ def validate_price_precision(value: Optional["Decimal"], currency: str = None):
         return
 
     currency_fraction = get_currency_fraction(currency or settings.DEFAULT_CURRENCY)
-    print("currency fraction: %s" % (currency_fraction))
     
     value = value.normalize()
-    print("value is: %s" % (value))
 
     if abs(value.as_tuple().exponent) > currency_fraction:
         raise ValidationError(

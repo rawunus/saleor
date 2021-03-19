@@ -1266,12 +1266,10 @@ class ProductVariantCreate(ModelMutation):
                 }
             )
 
-        print("base price is: %s" % (price))
         if "price" in cleaned_input:
             try:
                 validate_price_precision(price, instance.currency)
             except ValidationError as error:
-                print("validate price error!")
                 error.code = ProductErrorCode.INVALID.value
                 raise ValidationError({"price": error})
             cleaned_input["price_amount"] = price
@@ -1726,10 +1724,6 @@ class ProductImageCreate(BaseMutation):
         )
         image_data = info.context.FILES.get(data["image"])
         validate_image_file(image_data, "image")
-
-        print("here the file is validated!")
-        print("name is: %s" % (image_data.name))
-        print("Time in milliseconds since epoch", milliseconds) 
 
         image_data.name = str(milliseconds) + "_" + image_data.name
 
