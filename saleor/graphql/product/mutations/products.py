@@ -856,11 +856,9 @@ class ProductCreate(ModelMutation):
             )
 
         base_price = cleaned_input.get("base_price")
-        print("base price is: %s" % (base_price))
         try:
             validate_price_precision(base_price, instance.currency)
         except ValidationError as error:
-            print("validate price error!")
             error.code = ProductErrorCode.INVALID.value
             raise ValidationError({"base_price": error})
 
@@ -1268,10 +1266,12 @@ class ProductVariantCreate(ModelMutation):
                 }
             )
 
+        print("base price is: %s" % (price))
         if "price" in cleaned_input:
             try:
                 validate_price_precision(price, instance.currency)
             except ValidationError as error:
+                print("validate price error!")
                 error.code = ProductErrorCode.INVALID.value
                 raise ValidationError({"price": error})
             cleaned_input["price_amount"] = price
