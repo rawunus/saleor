@@ -859,6 +859,7 @@ class ProductCreate(ModelMutation):
         try:
             validate_price_precision(base_price, instance.currency)
         except ValidationError as error:
+            print("validate price error!")
             error.code = ProductErrorCode.INVALID.value
             raise ValidationError({"base_price": error})
 
