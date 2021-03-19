@@ -856,6 +856,7 @@ class ProductCreate(ModelMutation):
             )
 
         base_price = cleaned_input.get("base_price")
+        print("base price is: %s" % (base_price))
         try:
             validate_price_precision(base_price, instance.currency)
         except ValidationError as error:
