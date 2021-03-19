@@ -38,7 +38,7 @@ def validate_price_precision(value: Optional["Decimal"], currency: str = None):
     if not value:
         return
 
-    if n % 1000 == 0:
+    if value % 1000 == 0:
         return
 
     currency_fraction = get_currency_fraction(currency or settings.DEFAULT_CURRENCY)
